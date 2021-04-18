@@ -4,6 +4,12 @@ import Foundation
 
 class Cars {
     
+//    init() {
+//        
+//        _ wings = 4
+//    }
+    
+    
     let classification = "Vehicle"
     var fuelSource = "diesel"
     let wheels = 4
@@ -25,8 +31,10 @@ class BMW: Cars {
     
 }
 
-let myBMW = BMW()
-myBMW.canFly()
-myBMW.fuelSource
-print(myBMW)
+//let myBMW = BMW()
+//myBMW.canFly()
+//myBMW.fuelSource
+//print(myBMW.wings)
+let myCar = Cars()
+print(myCar.wings)
 
