@@ -5,7 +5,7 @@ import Foundation
 class Cars {
     
 //    init() {
-//        
+//
 //        _ wings = 4
 //    }
     
@@ -36,5 +36,5 @@ class BMW: Cars {
 //myBMW.fuelSource
 //print(myBMW.wings)
 let myCar = Cars()
-print(myCar.wings)
+//print(myCar.wings)
 
