@@ -110,3 +110,15 @@ var str = s + c
 print("sumInts")
 print("sumDoubl")
 print("str")
+
+
+let banner = """
+          __,
+         (           o  /) _/_
+          `.  , , , ,  //  /
+        (___)(_(_/_(_ //_ (__
+                     /)
+                    (/
+        """
+
+//print(banner)
