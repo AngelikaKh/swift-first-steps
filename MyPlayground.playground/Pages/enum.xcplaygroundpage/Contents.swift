@@ -23,4 +23,10 @@ func shareImg(on platform: SocialPlatform) {
     
 }
 
-shareImg(on: .facebook)
+//shareImg(on: .facebook)
+
+func getAngeliksOpinion(on platform: SocialPlatform) {
+    print(platform.rawValue)
+}
+
+getAngeliksOpinion(on: .facebook)
