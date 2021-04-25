@@ -25,8 +25,31 @@ func shareImg(on platform: SocialPlatform) {
 
 //shareImg(on: .facebook)
 
-func getAngeliksOpinion(on platform: SocialPlatform) {
-    print(platform.rawValue)
+//func getAngeliksOpinion(on platform: SocialPlatform) {
+//    print(platform.rawValue)
+//}
+//
+//getAngeliksOpinion(on: .facebook)
+
+enum SocialMediaPlatform {
+    case twitter(followers: Int)
+    case youtube(subscriber: Int)
+    case instagram
+    case linkedin
 }
 
-getAngeliksOpinion(on: .facebook)
+func getSponsorshipEligibility(for platform: SocialMediaPlatform) {
+    switch platform {
+    
+    case .twitter(let followers) where followers > 10_000:
+        print("Eligible for sponsored Tweet.")
+    
+    case .youtube(let subscribers) where subscribers > 25_000:
+        print("Eligible for sponsored video.")
+    
+    case .twitter, .instagram, .youtube, .linkedin:
+        print("Not eligible for sponsorship.")
+    }
+}
+
+getSponsorshipEligibility(for: .twitter(followers: 9000))
